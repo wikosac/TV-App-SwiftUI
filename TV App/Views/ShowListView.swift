@@ -42,6 +42,9 @@ struct ShowListView: View {
             placement: .navigationBarDrawer(displayMode: .always),
             prompt: "Search shows"
         )
+        .navigationDestination(for: Show.self) { show in
+            ShowDetailView(viewModel: ShowDetailViewModel(showID: show.id))
+        }
         .task {
             if case .loading = viewModel.state {
                 await viewModel.loadShows()

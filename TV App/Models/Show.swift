@@ -56,6 +56,7 @@ struct Episode: Codable, Identifiable, Hashable {
     let number: Int
     let airdate: String?
     let summary: String?
+    let image: ShowImage?
 }
 
 struct CastMember: Codable, Identifiable, Hashable {
