@@ -8,17 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		99BEE57B30525DC1007E1AB6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 99BEE57A30525DC1007E1AB6 /* Alamofire */; };
-		99BEE57D30525DC1007E1AB6 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 99BEE57C30525DC1007E1AB6 /* AlamofireDynamic */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		99BEE58B3052892E007E1AB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99BEE55C30525B4A007E1AB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99BEE56330525B4B007E1AB6;
+			remoteInfo = "TV App";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		99BEE56430525B4B007E1AB6 /* TV App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TV App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99BEE5873052892E007E1AB6 /* TV AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TV AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		99BEE56630525B4B007E1AB6 /* TV App */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "TV App";
+			sourceTree = "<group>";
+		};
+		99BEE5883052892E007E1AB6 /* TV AppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "TV AppTests";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -29,7 +44,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				99BEE57B30525DC1007E1AB6 /* Alamofire in Frameworks */,
-				99BEE57D30525DC1007E1AB6 /* AlamofireDynamic in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99BEE5843052892E007E1AB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				99BEE56630525B4B007E1AB6 /* TV App */,
+				99BEE5883052892E007E1AB6 /* TV AppTests */,
 				99BEE56530525B4B007E1AB6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				99BEE56430525B4B007E1AB6 /* TV App.app */,
+				99BEE5873052892E007E1AB6 /* TV AppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,11 +96,33 @@
 			name = "TV App";
 			packageProductDependencies = (
 				99BEE57A30525DC1007E1AB6 /* Alamofire */,
-				99BEE57C30525DC1007E1AB6 /* AlamofireDynamic */,
 			);
 			productName = "TV App";
 			productReference = 99BEE56430525B4B007E1AB6 /* TV App.app */;
 			productType = "com.apple.product-type.application";
+		};
+		99BEE5863052892E007E1AB6 /* TV AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99BEE58D3052892E007E1AB6 /* Build configuration list for PBXNativeTarget "TV AppTests" */;
+			buildPhases = (
+				99BEE5833052892E007E1AB6 /* Sources */,
+				99BEE5843052892E007E1AB6 /* Frameworks */,
+				99BEE5853052892E007E1AB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99BEE58C3052892E007E1AB6 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				99BEE5883052892E007E1AB6 /* TV AppTests */,
+			);
+			name = "TV AppTests";
+			packageProductDependencies = (
+			);
+			productName = "TV AppTests";
+			productReference = 99BEE5873052892E007E1AB6 /* TV AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -91,6 +136,10 @@
 				TargetAttributes = {
 					99BEE56330525B4B007E1AB6 = {
 						CreatedOnToolsVersion = 26.6;
+					};
+					99BEE5863052892E007E1AB6 = {
+						CreatedOnToolsVersion = 26.6;
+						TestTargetID = 99BEE56330525B4B007E1AB6;
 					};
 				};
 			};
@@ -112,12 +161,20 @@
 			projectRoot = "";
 			targets = (
 				99BEE56330525B4B007E1AB6 /* TV App */,
+				99BEE5863052892E007E1AB6 /* TV AppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		99BEE56230525B4B007E1AB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99BEE5853052892E007E1AB6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -134,7 +191,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		99BEE5833052892E007E1AB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		99BEE58C3052892E007E1AB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99BEE56330525B4B007E1AB6 /* TV App */;
+			targetProxy = 99BEE58B3052892E007E1AB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		99BEE56D30525B4C007E1AB6 /* Debug */ = {
@@ -322,6 +394,48 @@
 			};
 			name = Release;
 		};
+		99BEE58E3052892E007E1AB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KHR435LRJJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wikosac.TV-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TV App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TV App";
+			};
+			name = Debug;
+		};
+		99BEE58F3052892E007E1AB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KHR435LRJJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wikosac.TV-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TV App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TV App";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -339,6 +453,15 @@
 			buildConfigurations = (
 				99BEE57030525B4C007E1AB6 /* Debug */,
 				99BEE57130525B4C007E1AB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99BEE58D3052892E007E1AB6 /* Build configuration list for PBXNativeTarget "TV AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99BEE58E3052892E007E1AB6 /* Debug */,
+				99BEE58F3052892E007E1AB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -361,11 +484,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 99BEE57930525DC1007E1AB6 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
-		};
-		99BEE57C30525DC1007E1AB6 /* AlamofireDynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 99BEE57930525DC1007E1AB6 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = AlamofireDynamic;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
